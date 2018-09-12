@@ -7,7 +7,7 @@ export default class TableWrapper extends Component {
     render() {
         return (
             <div className="TableWrapper">
-                <header>
+                <header className="TableHeader" >
                     <h2>Counter party</h2>
                     <h2>Trading Participant</h2>
                     <h2>Client</h2>
@@ -18,7 +18,6 @@ export default class TableWrapper extends Component {
                     <h2>Settlement date</h2>
                 </header>
                 <div className="hr"></div>
-
                 <div className="list-wrapper">
                     <TableRow active={true}/>
                     <TableRow/>
