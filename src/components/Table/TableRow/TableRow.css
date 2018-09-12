@@ -1,0 +1,78 @@
+.TableRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-grow: 1;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(195,210,233,.3);
+}
+.TableRow.active{
+    background-color: var(--theme-primary);
+    position: relative;
+}
+.TableRow.active:before{
+    background-color: var(--theme-primary);
+    content: '';
+    position: absolute;
+    height: calc(100% + 1px);
+    width: 30px;
+    left: -30px;
+}
+.TableRow.active:after{
+    background-color: var(--theme-primary);
+    content: '';
+    position: absolute;
+    height: calc(100% + 1px);
+    width: 60px;
+    right: -60px;
+}
+.TableRow:hover{
+    background-color: var(--theme-primary);
+    position: relative;
+    border-bottom: 1px solid var(--theme-primary);
+}
+.TableRow.active{
+    background-color: var(--theme-primary);
+    position: relative;
+    border-bottom: 1px solid var(--theme-primary);
+}
+.TableRow:hover:before{
+    background-color: var(--theme-primary);
+    content: '';
+    position: absolute;
+    height: calc(100% + 1px);
+    width: 30px;
+    left: -30px;
+}
+.TableRow:hover:after{
+    background-color: var(--theme-primary);
+    content: '';
+    position: absolute;
+    height: calc(100% + 1px);
+    width: 60px;
+    right: -60px;
+}
+.TableRow.active h2{
+    color: #7fdffe;
+}
+.TableRow.active h2:nth-child(5),.TableRow.active h2:nth-child(6){
+    color: #ffffff;
+}
+.TableRow:hover h2{
+    color: #7fdffe;
+}
+.TableRow:hover h2:nth-child(5),.TableRow:hover h2:nth-child(6){
+    color: #ffffff;
+}
+.TableRow h2{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 15px 0;
+    font-family: 'GloberRegular',sans-serif;
+    color: #17497d;
+}
+.TableRow h2:nth-child(5),.TableRow h2:nth-child(6){
+    color: var(--theme-primary);
+}

@@ -1,0 +1,33 @@
+:root{
+    --theme-primary:#009fdf ;
+}
+/*
+
+    #f26722 orange
+    #009fdf blue
+    #38b249 green
+    #00a58e artboard
+    #da4167 pink
+    #ffc649 yellow
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-face-name: 'GloberBold';
+    src: url('/src/assets/font/Glober Bold.otf');
+}
+
+@font-face {
+    font-face-name: 'GloberRegular';
+    src: url('/src/assets/font/Glober Regular.otf');
+}

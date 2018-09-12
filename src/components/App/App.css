@@ -1,0 +1,28 @@
+div.app{
+    clear: both;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*background-image: url(../../bg.png);*/
+    background-color: #0c3b6c;
+    position: relative;
+}
+div.app:after{
+    z-index: 0;
+    background-color: var(--theme-primary);
+    content: '';
+    transform: rotate(-40deg) ;
+    position: absolute;
+    left: 5.5%;
+    bottom: -10vh;
+    width: 110%;
+    height: 100vh
+}
+.wrapper{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
